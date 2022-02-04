@@ -95,8 +95,9 @@ resulting JSON schema.
 
 This is, in general lines, how I plan to accomplish that:
 
-- [ ] Get information about a schema (currently by parsing the introspection
+- [x] Get information about a schema (currently by parsing the introspection
   query result by calling `Absinthe.Schema.introspect/1`).
+  - [ ] Maybe we can add tests (maybe property testing?) that we can reconstruct the introspection schema to make sure we are not loosing any valuable information.
 - [ ] Build a JSON schema from a query (no transforms)
 - [ ] Implement the runtime of the proxy by using `@endpoint` directives and
   macros to create a plug (always returning 200).
