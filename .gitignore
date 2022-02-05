@@ -24,3 +24,4 @@ bed-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+playground
